@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_win2.css">
+    <style>
+        #color_text{
+            color: black;
+        }
+    </style>
 </head>
 <body dir="rtl">
-    <div class="list_1">
-        <div>
+    <div id="list_1">
+        <div id="head_2">
             <h2>انواع usb في الاختراق:</h2>
             <ol>
                 <li>hh</li>
@@ -28,24 +33,27 @@
         </div>
     </div>
     <hr>
+    <a href="../img/gif/"></a>
     <h4 style="margin-right: 5px;">اعرض معلومات عن 
-        <select id="choise">
-            <option style="display: none;"  onclick="open_usp()"></option>
-            <option value=""  onclick="open_usp()"></option>
-            <option value="auto_run"  onclick="open_usp()">auto run</option>
-            <option value="usb_killer"  onclick="open_usp()">usb killer</option>
+        <select id="choise" onclick="open_usp()">
+            <option style="display: none;"></option>
+            <option value=""></option>
+            <option value="auto_run">auto run</option>
+            <option value="usb_killer">usb killer</option>
         </select>
     </h4>
     <div id="info">
-        
     </div>
     <script>
         function open_usp(){
             user_choise = document.getElementById("choise").value;
             if(user_choise == 'auto_run'){
-                alert(
-                    
-                user_choise)
+                alert(user_choise);
+            } else if(user_choise == 'usb_killer'){
+                document.getElementById("info").innerHTML = `
+                        <div style="display: flex;justify-content: center;"><img src="../img/gif/97df4acbb437547ca7f7db9ace467050.gif" alt=""></div>
+
+                `
             }
         }
     </script>

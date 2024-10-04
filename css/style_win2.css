@@ -1,13 +1,22 @@
 body{
     position: relative;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
-.list_1{
+#list_1{
     position: relative;
+    overflow-x: hidden;
     display: flex;
     align-items: flex-start;
 }
 pre{
     font-size: 15px;
+}
+#info{
+    position: relative;
+    padding-right: 25px;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }

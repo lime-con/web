@@ -35,7 +35,9 @@ body{
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    background-color: silver
+    background: url(../img/gif/50b3539c414fd74afe4bdefde95ac911.gif);
+    background-size: cover;
+    background-position-x: center;
 }
 .win_all{
     position: absolute;
